@@ -106,23 +106,5 @@ class War {
         }
     }
 }
-function generateViking() {
-    const name = 'Harald';
-    const strength = 150;
-    const health = 300;
-    return new Viking(name, health, strength);
-  }
-
-  function generateSaxon() {
-    const health = 60;
-    const strength = 25;
-    return new Saxon(health, strength);
-  }
-const war = new War()
-war.addSaxon(generateSaxon())
-war.addViking(generateViking())
-console.log(war.saxonAttack());
-console.log(war.showStatus())
-
 
 
